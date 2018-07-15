@@ -1,0 +1,36 @@
+-- 公共操作
+DEL KEY
+
+-- STRING 操作
+SET KEY VALUE -- 插入一个 STRING 对象
+GET KEY -- 获取 STRING-VALUE
+SLEN KEY -- 获取该 STRING 的长度
+
+-- ZSET 操作
+ZADD KEY MEMBER SCORE -- 向有序集合中添加键值对
+ZCARD KEY -- 获取包含节点数量 
+ZCOUNT KEY MIN MAX -- 获取给定范围内的节点数量
+ZRANGE KEY START STOP -- 返回给定索引范围内的所有元素
+ZRANK KEY MEMBER -- 查找给定成员的排名
+ZREM KEY MEMBER -- 删除给定成员
+ZSCORE KEY MEMBER -- 获取给定成员的分值
+
+-- LIST 链表操作
+LPUSH KEY VALUE -- 向链表头部插入数据
+RPUSH KEY VALUE -- 向链表尾部插入数据
+LPOP KEY -- 从链表头部删除数据
+RPOP KEY -- 从链表尾部删除数据
+LINDEX KEY INDEX -- 获取指定索引的值 
+LLEN KEY -- 链表长度
+LREM KEY VALUE -- 删除包含指定值的节点
+
+-- HASH 操作
+HSET KEY FIELD VALUE -- 将键添加到字典中
+HGET KEY FIELD -- 获取指定键对应的值
+HEXISTS KEY FIELD -- 判断键是否存在
+HDEL KEY FIELD -- 删除指定键
+HLEN KEY -- 查询 HASH 的插入节点个数
+
+
+
+
